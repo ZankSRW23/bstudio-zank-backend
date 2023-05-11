@@ -10,6 +10,7 @@ const port = process.env.PORT;
 const db = mysql.createConnection(process.env.DATABASE_URL);
 const app = express();
 
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
